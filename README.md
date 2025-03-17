@@ -1,8 +1,23 @@
-# Astro Modern Company Theme
+# WBC Engineering Website
 
-NOTE - Heavily Inspired by - https://www.wellthapp.com/
+A modern, professional website for WBC Engineering, showcasing our expertise in welding and engineering solutions.
 
-[Live Preview Here](https://modern.corytrimm.com/).
+## About WBC Engineering
+
+WBC Engineering specializes in:
+- Material behavior during welding
+- Welding defects, their avoidance and repair
+- ISO-9001 certified Quality Management System
+- Welding quality management for power generation, pipeline and construction projects
+- Complete turnkey engineering and metal fabrication solutions
+- Complex welding engineering problem solving
+
+## Project Overview
+
+This website is built using:
+- [Astro](https://astro.build/) - A modern static site generator
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
+- Modern design principles focusing on professionalism and clarity
 
 ## Getting Started
 
@@ -10,16 +25,15 @@ To get started with this project, follow these steps:
 
 1. Clone the repository:
 ```bash
-bash
-git clone https://github.com/your-username/magical-motion.git
+git clone https://github.com/prophet555/wbcEngineering.git
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd magical-motion
+cd wbcEngineering
 ```
 
-3. Install the dependencies
+3. Install the dependencies:
 ```bash
 npm install
 ```
@@ -29,7 +43,6 @@ npm install
 npm run dev
 ```
 
-
 The development server will start at `http://localhost:4321`. Any changes you make to the code will be automatically reflected in the browser.
 
 ## Project Structure
@@ -37,63 +50,60 @@ The development server will start at `http://localhost:4321`. Any changes you ma
 The project structure is organized as follows:
 
 ```bash
-magical-motion/
+wbcEngineering/
 ├── src/
-│ ├── components/
-│ │ ├── Header.astro
-│ │ ├── Footer.astro
-│ │ ├── Hero.astro
-│ │ ├── Features.astro
-│ │ ├── Testimonials.astro
-│ │ ├── Partners.astro
-│ │ ├── CallToAction.astro
-│ │ └── ContactForm.astro
-│ ├── layouts/
-│ │ └── Layout.astro
-│ └── pages/
-│ └── index.astro
-├── public/
-│ └── images/
-├── tailwind.config.js
-├── astro.config.mjs
-└── package.json
+│   ├── components/
+│   │   ├── Header.astro      # Main navigation and branding
+│   │   ├── Footer.astro      # Site footer with contact information
+│   │   ├── Hero.astro        # Main landing section
+│   │   ├── Features.astro    # Key services and expertise
+│   │   ├── Testimonials.astro # Client success stories
+│   │   ├── Partners.astro    # Partner company logos
+│   │   └── ContactForm.astro # Contact form component
+│   ├── layouts/
+│   │   └── Layout.astro      # Main site layout
+│   └── pages/
+│       └── index.astro       # Home page
+├── src/assets/
+│   └── logos/               # Partner company logos
+├── tailwind.config.js       # Tailwind CSS configuration
+├── astro.config.mjs         # Astro configuration
+└── package.json            # Project dependencies and scripts
 ```
 
-- `src/components/`: This directory contains reusable Astro components used throughout the website.
-- `src/layouts/`: This directory contains the main layout component (`Layout.astro`) that wraps the entire website.
-- `src/pages/`: This directory contains the main page components, which define the routes of the website.
-- `public/images/`: This directory contains static image assets used in the website.
-- `tailwind.config.js`: This file contains the configuration for the Tailwind CSS utility classes.
-- `astro.config.mjs`: This file contains the configuration for the Astro build process.
-- `package.json`: This file contains the project dependencies and scripts.
+## Key Features
 
-## Editing Components
-
-To edit a component, navigate to the `src/components/` directory and open the corresponding `.astro` file. For example, to edit the `Header` component, open `src/components/Header.astro`.
-
-Astro components use a mix of HTML, CSS, and JavaScript (or TypeScript). You can modify the markup, styles, and logic within these files to customize the appearance and behavior of the components.
+- Modern, responsive design
+- Optimized performance
+- SEO-friendly structure
+- Easy-to-maintain component architecture
+- Mobile-first approach
+- Professional contact form
+- Partner showcase section
 
 ## Building for Production
 
-To build the project for production, run the following command:
+To build the project for production, run:
 ```bash
 npm run build
 ```
 
+This will generate a production-ready build in the `dist/` directory.
 
-This command will generate a production-ready build of your website in the `dist/` directory.
+## Deployment
 
-## Deploying to Production
+The website is deployed using GitHub Pages. To deploy updates:
 
-After building the project, you can deploy the `dist/` directory to a hosting service of your choice. Some popular options include:
+1. Commit your changes
+2. Push to the main branch
+3. The site will automatically deploy
 
-- [Netlify](https://www.netlify.com/)
-- [Vercel](https://vercel.com/)
-- [GitHub Pages](https://pages.github.com/)
-- [AWS S3](https://aws.amazon.com/s3/)
+## Contact
 
-Refer to the documentation of your chosen hosting service for instructions on how to deploy the `dist/` directory.
+For project inquiries or support, please contact:
+- Phone: 0404 017 170
+- Email: [Your Email Address]
 
-## Learn More
+## License
 
-To learn more about Astro and its features, check out the [official Astro documentation](https://docs.astro.build/).
+This project is proprietary and confidential. All rights reserved.
