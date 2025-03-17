@@ -1,38 +1,38 @@
 ---
 import { Image } from 'astro:assets';
-import logo1 from '../assets/logos/1.png';
-import logo2 from '../assets/logos/2.png';
-import logo3 from '../assets/logos/3.png';
-import logo4 from '../assets/logos/4.png';
-import logo5 from '../assets/logos/5.png';
+import bmdLogo from '../assets/logos/bmd.png';
+import broadLogo from '../assets/logos/broad.svg';
+import cimicLogo from '../assets/logos/cimic-svg.svg';
+import csrLogo from '../assets/logos/csr.png';
+import multiplexLogo from '../assets/logos/multiplex.png';
+import santosLogo from '../assets/logos/santos.svg';
+import woodsideLogo from '../assets/logos/woodside.svg';
+import shellLogo from '../assets/logos/Shell.svg';
 
 const partners = [
-  { name: "Fradel & Sons", logo: logo1 },
-  { name: "Wildwood Conservation", logo: logo2 },
-  { name: "Borcelle", logo: logo3 },
-  { name: "Maria Donna", logo: logo4 },
-  { name: "Ignite Bright", logo: logo5 },
-  { name: "Ignite Bright", logo: logo5 },
-  { name: "Borcelle", logo: logo3 },
-  { name: "Maria Donna", logo: logo4 },
-  { name: "Wildwood Conservation", logo: logo2 },
-  { name: "Fradel & Sons", logo: logo1 },
-  // Add more partners here
+  { name: "BMD Company", logo: bmdLogo },
+  { name: "Broad Construction", logo: broadLogo },
+  { name: "Cimic Group", logo: cimicLogo },
+  { name: "CSR", logo: csrLogo },
+  { name: "Multiplex", logo: multiplexLogo },
+  { name: "Santos", logo: santosLogo },
+  { name: "Shell Energy", logo: shellLogo },
+  { name: "Woodside", logo: woodsideLogo }
 ];
 ---
 
 <section class="bg-white py-20">
   <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-serif font-bold text-center mb-12">30 million daily check-ins</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+    <h2 class="text-3xl font-serif font-bold text-center mb-12">Project Partners</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
       {partners.map((partner) => (
         <div class="flex items-center justify-center">
           <Image 
             src={partner.logo} 
-            alt="partner.name" 
-            class="rounded-lg"
-            width={128}
-            height={128}
+            alt={partner.name} 
+            class="max-h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+            width={200}
+            height={64}
           />
         </div>
       ))}

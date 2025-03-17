@@ -2,6 +2,8 @@
 import { Image } from 'astro:assets';
 import logoImg from '../assets/logo.png';
 
+// Navigation items commented out for future use
+/*
 const navItems = [
   { label: 'Solution', href: '#' },
   { label: 'Who We Help', href: '#' },
@@ -9,6 +11,7 @@ const navItems = [
   { label: 'Company', href: '#' },
   { label: 'Resources', href: '#' },
 ];
+*/
 ---
 
 <header class="bg-white shadow-md">
@@ -21,8 +24,9 @@ const navItems = [
         width={48}
         height={48}
       />
-      <span class="ml-2">Your Company</span>
+      <span class="ml-2">WBC Engineering</span>
     </a>
+    <!-- Navigation menu commented out for future use
     <nav class="hidden md:flex space-x-6">
       {navItems.map(item => (
         <a href={item.href} class="text-gray-700 hover:text-primary-500 transition duration-150 ease-in-out">
@@ -30,6 +34,7 @@ const navItems = [
         </a>
       ))}
     </nav>
+    -->
     <a href="/#" class="bg-primary-500 text-white px-4 py-2 rounded hover:bg-primary-600 transition duration-150 ease-in-out">
       Contact Us
     </a>
